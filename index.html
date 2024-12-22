@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="img/flowers.png" type="image/x-icon" />
+  <title>FELIZ NATAL :)</title>
+</head>
+<body class="container">
+  <audio src="sound/Silent_Night.mp3" autoplay></audio> 
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Moça dos olhos azuis</strong>
+            <p>
+              feliz natal!!!, meuuu podia ter falado com vc no dia que te vi jogando bola
+              mas enfim, feliz natal viu ♥ meu maior presente foi ter te conhecido.
+              Desculpa qualquer idiotice minha tá, adoro te ver sorrir hehe...Beijos, Thiago <3
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="heart"></div>
+    </div>
+  </div>
+
+  <script>
+    const envelope = document.querySelector('.envelope-wrapper');
+    envelope.addEventListener('click', () => {
+      envelope.classList.toggle('flap');
+    });
+  </script>
+
+</body>
+</html>
